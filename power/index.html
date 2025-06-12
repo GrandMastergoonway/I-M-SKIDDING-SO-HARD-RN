@@ -98,31 +98,31 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      max-width: 1400px;
+      max-width: 1800px;
     }
 
     .image-row {
       display: flex;
       justify-content: center;
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .image-container {
       position: relative;
-      margin: 10px;
-      width: 400px;
-      height: 250px;
-      border-radius: 10px;
+      margin: 15px;
+      width: 600px;
+      height: 350px;
+      border-radius: 15px;
       overflow: hidden;
-      box-shadow: 0 0 20px #8a2be2;
+      box-shadow: 0 0 25px #8a2be2;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       background: rgba(138, 43, 226, 0.2);
     }
 
     .image-container:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 30px #8a2be2;
+      box-shadow: 0 0 40px #8a2be2;
     }
 
     .image-container img {
@@ -137,9 +137,36 @@
       left: 0;
       right: 0;
       background: rgba(0, 0, 0, 0.7);
-      padding: 10px;
+      padding: 15px;
       font-weight: bold;
       text-align: center;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 1400px) {
+      .image-container {
+        width: 500px;
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .image-container {
+        width: 450px;
+        height: 270px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-container {
+        width: 80%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
     }
   </style>
 </head>
@@ -190,7 +217,7 @@
           <div class="image-title">Capcut.com</div>
         </div>
         <div class="image-container">
-          <img src="https://via.placeholder.com/400x250/8a2be2/ffffff?text=Power+6" alt="Power 6">
+          <img src="https://via.placeholder.com/600x350/8a2be2/ffffff?text=Power+6" alt="Power 6">
           <div class="image-title">Power Node 6</div>
         </div>
       </div>
